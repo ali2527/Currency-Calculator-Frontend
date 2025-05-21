@@ -5,7 +5,7 @@ import { Select, InputNumber, Button, Spin, Typography, message } from 'antd';
 import axios from 'axios';
 import { addToHistory, getHistory } from '../utils/storage';
 import { SwapOutlined } from '@ant-design/icons';
-import './Converter.css';
+import './converter.css';
 
 const { Option } = Select;
 const { Title, Text } = Typography;
