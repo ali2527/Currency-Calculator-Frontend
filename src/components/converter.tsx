@@ -24,7 +24,7 @@ const Converter: React.FC<ConverterProps> = ({ setHistory }) => {
 
   const fetchCurrencies = async () => {
     try {
-      const res = await axios.get('http://localhost:5000/currencies');
+      const res = await axios.get('https://currency-calculator-backend.vercel.app/currencies');
       setCurrencies(res.data.data);
     } catch (err) {
       message.error('Failed to fetch currencies');
@@ -34,7 +34,7 @@ const Converter: React.FC<ConverterProps> = ({ setHistory }) => {
   const convert = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('http://localhost:5000/convert', {
+      const res = await axios.get('https://currency-calculator-backend.vercel.app/convert', {
         params: { from, to, amount }
       });
       setResult(res.data.result);
