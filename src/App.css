@@ -1,0 +1,72 @@
+/* Reset margin and set global font */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* App container styling */
+.app-container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 12px;
+}
+
+/* Title spacing */
+.ant-typography {
+  text-align: center;
+  margin-bottom: 1.5rem !important;
+}
+
+/* Convert button */
+.convert-btn {
+  background-color: #1890ff;
+  color: white;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.convert-btn:hover {
+  background-color: #40a9ff;
+}
+
+/* Spinner centering */
+.loader-container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+/* History box */
+.history-container {
+  margin-top: 2rem;
+}
+
+.ant-list-item {
+  font-size: 0.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+  .app-container {
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+}
+
+.app-container {
+  max-width: fit-content;
+  margin: 40px auto; /* centers horizontally and adds vertical spacing */
+  padding: 20px 0;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-radius: 8px;
+  min-height: 100vh; /* optional, to give some vertical presence */
+  display: flex;
+  flex-direction: column;
+  /* gap: 24px; */
+}
+
